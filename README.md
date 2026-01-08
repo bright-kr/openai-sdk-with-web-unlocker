@@ -1,6 +1,6 @@
 # 고성능을 위한 Web Unlocker와 OpenAI Agents SDK 통합 방법
 
-[![Bright Data Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/)
+[![Bright Data Promo](https://github.com/bright-kr/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/)
 
 이 가이드는 OpenAI의 Agents SDK를 Web Unlocker API와 결합하여 웹사이트에서 데이터를 가져오고 처리하는 방식으로 Python에서 견고한 AI 에이전트를 생성하는 방법을 설명합니다.
 
@@ -91,7 +91,7 @@ python -m venv venv
 
 `openai-sdk-agent` 디렉터리 안에 `agent.py`라는 새 Python 파일을 생성하십시오. 이제 디렉터리 구조는 다음과 같이 보일 것입니다:
 
-![The file structure of the AI agent project](https://github.com/luminati-io/openai-sdk-with-web-unlocker/blob/main/images/The-file-structure-of-the-AI-agent-project.png)
+![The file structure of the AI agent project](https://github.com/bright-kr/openai-sdk-with-web-unlocker/blob/main/images/The-file-structure-of-the-AI-agent-project.png)
 
 현재 `scraper.py`는 비어 있는 Python 스크립트이지만, 곧 원하는 AI 에이전트 로직을 포함하게 됩니다.
 
@@ -146,7 +146,7 @@ if __name__ == "__main__":
 
 프로젝트 디렉터리에 `.env` 파일을 생성하십시오:
 
-![Adding a .env file to your project](https://github.com/luminati-io/openai-sdk-with-web-unlocker/blob/main/images/Adding-a-.env-file-to-your-project.png)
+![Adding a .env file to your project](https://github.com/bright-kr/openai-sdk-with-web-unlocker/blob/main/images/Adding-a-.env-file-to-your-project.png)
 
 이 파일에는 API 키 및 시크릿 토큰과 같은 환경 변수를 저장합니다. `.env` 파일에서 환경 변수를 로드하려면 `dotenv` 패키지의 `load_dotenv()`를 사용하십시오:
 
@@ -188,15 +188,15 @@ OPENAI_API_KEY="<YOUR_OPENAI_KEY>"
 
 Bright Data "User Dashboard" 페이지에서 "Get proxy products" 옵션을 선택하십시오:
 
-![Clicking the "Get proxy products" option](https://github.com/luminati-io/openai-sdk-with-web-unlocker/blob/main/images/Clicking-the-Get-proxy-products-option.png)
+![Clicking the "Get proxy products" option](https://github.com/bright-kr/openai-sdk-with-web-unlocker/blob/main/images/Clicking-the-Get-proxy-products-option.png)
 
 제품 테이블에서 "unblocker"라고 표시된 행을 찾은 다음 클릭하십시오:
 
-![Clicking the "unblocker" row](https://github.com/luminati-io/openai-sdk-with-web-unlocker/blob/main/images/Clicking-the-unblocker-row.png)
+![Clicking the "unblocker" row](https://github.com/bright-kr/openai-sdk-with-web-unlocker/blob/main/images/Clicking-the-unblocker-row.png)
 
 "unlocker" 페이지에서 클립보드 아이콘을 사용하여 API 토큰을 복사하십시오:
 
-![Copying the API token](https://github.com/luminati-io/openai-sdk-with-web-unlocker/blob/main/images/Copying-the-API-token.png)
+![Copying the API token](https://github.com/bright-kr/openai-sdk-with-web-unlocker/blob/main/images/Copying-the-API-token.png)
 
 또한 우측 상단의 토글이 "On"으로 전환되어 Web Unlocker 제품이 활성화되어 있는지 확인하십시오.
 
@@ -537,15 +537,15 @@ python agent.py
 
 예를 들어 [Bright Data의 AI services hub](https://brightdata.co.kr/ai) 콘텐츠를 요약하고 싶다면, 다음과 같은 요청을 입력하면 됩니다:
 
-![The input to get a summary of Bright Data's AI services](https://github.com/luminati-io/openai-sdk-with-web-unlocker/blob/main/images/The-input-to-get-a-summary-of-Bright-Datas-AI-services.png)
+![The input to get a summary of Bright Data's AI services](https://github.com/bright-kr/openai-sdk-with-web-unlocker/blob/main/images/The-input-to-get-a-summary-of-Bright-Datas-AI-services.png)
 
 그러면 다음과 같은 JSON 형식의 결과를 받게 됩니다:
 
-![The summary returned by your AI agent](https://github.com/luminati-io/openai-sdk-with-web-unlocker/blob/main/images/The-summary-returned-by-your-AI-agent.png)
+![The summary returned by your AI agent](https://github.com/bright-kr/openai-sdk-with-web-unlocker/blob/main/images/The-summary-returned-by-your-AI-agent.png)
 
 이제 [PS5 listing](https://www.amazon.com/PlayStation%C2%AE5-console-slim-PlayStation-5/dp/B0CL61F39H/)과 같은 Amazon 상품 페이지에서 상품 데이터를 추출하고 싶다고 가정해 보겠습니다:
 
-![The Amazon PS5 page](https://github.com/luminati-io/openai-sdk-with-web-unlocker/blob/main/images/The-Amazon-PS5-page.png)
+![The Amazon PS5 page](https://github.com/bright-kr/openai-sdk-with-web-unlocker/blob/main/images/The-Amazon-PS5-page.png)
 
 일반적으로 [Amazon의 CAPTCHA 및 앤チボット 시스템](https://brightdata.co.kr/blog/web-data/bypass-amazon-captcha)이 요청을 차단합니다. Web Unlocker API를 사용하면, AI 에이전트는 차단되지 않고 페이지에 접근하여 분석할 수 있습니다:
 
@@ -565,7 +565,7 @@ python agent.py
 
 마지막으로 [Yahoo News 기사](https://www.yahoo.com/news/pope-francis-dies-88-080859417.html)에서 구조화된 뉴스 정보를 얻고 싶다고 가정해 보겠습니다:
 
-![The target Yahoo News article](https://github.com/luminati-io/openai-sdk-with-web-unlocker/blob/main/images/The-target-Yahoo-News-article.png)
+![The target Yahoo News article](https://github.com/bright-kr/openai-sdk-with-web-unlocker/blob/main/images/The-target-Yahoo-News-article.png)
 
 다음 입력으로 수행할 수 있습니다:
 
