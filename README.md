@@ -37,7 +37,7 @@ OpenAI Agents SDK는 최소한의 추상화로 여러 필수 구성 요소를 �
 
 대부분의 AI 에이전트는 콘텐츠를 추출하거나 페이지 요소와 상호작용하는 등 웹 페이지에서의 작업을 자동화하는 것을 목표로 합니다. 즉, 본질적으로 Web을 프로그래밍 방식으로 탐색해야 합니다.
 
-AI 모델 자체의 잠재적 오해석을 넘어, 이러한 에이전트가 마주하는 가장 큰 [장애물](https://brightdata.co.kr/blog/web-data/anti-scraping-techniques)은 웹사이트의 방어 메커니즘을 처리하는 일입니다. 많은 사이트가 앤チボット 및 アンチスクレイピング 기술을 구현하여 AI 에이전트를 제한하거나 오도할 수 있기 때문입니다. 특히 오늘날에는 [anti-AI CAPTCHA와 고도화된 봇 탐지 시스템이 점점 더 보편화](https://hackernoon.com/ai-agent-browsers-are-failing-and-its-not-just-because-of-captchas)되고 있어 더욱 중요합니다.
+AI 모델 자체의 잠재적 오해석을 넘어, 이러한 에이전트가 마주하는 가장 큰 [장애물](https://brightdata.co.kr/blog/web-data/anti-scraping-techniques)은 웹사이트의 방어 메커니즘을 처리하는 일입니다. 많은 사이트가 앤チボット 및 アンチ스크레이핑 기술을 구현하여 AI 에이전트를 제한하거나 오도할 수 있기 때문입니다. 특히 오늘날에는 [anti-AI CAPTCHA와 고도화된 봇 탐지 시스템이 점점 더 보편화](https://hackernoon.com/ai-agent-browsers-are-failing-and-its-not-just-because-of-captchas)되고 있어 더욱 중요합니다.
 
 이러한 장애물을 극복하려면, 에이전트의 웹 탐색 역량을 강화하기 위해 [Bright Data의 Web Unlocker API](https://brightdata.co.kr/products/web-unlocker)와 같은 솔루션과 통합해야 합니다. 이 도구는 인터넷에 연결되는 어떤 HTTP 클라이언트나 솔루션( AI 에이전트 포함)과도 함께 동작하는 웹 언락 게이트웨이 역할을 합니다. 어떤 웹페이지에서든 깨끗하고 차단되지 않은 HTML을 제공합니다. 더 이상 CAPTCHA, IP 제약, 접근 불가 콘텐츠에 막히지 않습니다.
 
@@ -55,7 +55,7 @@ AI 모델 자체의 잠재적 오해석을 넘어, 이러한 에이전트가 마
 > 
 > 위에서 언급한 세 가지 사용 사례는 단지 예시입니다. 여기서 제시하는 방법론은 에이전트의 동작을 커스터마이즈함으로써 다양한 다른 시나리오로 확장할 수 있습니다.
 
-최적의 성능을 위해 OpenAI Agents SDK와 Bright Data의 Web Unlocker API를 사용하여 Python에서 AI スクレイピング 에이전트를 개발하려면 다음 지침을 따르십시오.
+최적의 성능을 위해 OpenAI Agents SDK와 Bright Data의 Web Unlocker API를 사용하여 Python에서 AI 스크레이핑 에이전트를 개발하려면 다음 지침을 따르십시오.
 
 ### Prerequisites
 
@@ -64,7 +64,7 @@ AI 모델 자체의 잠재적 오해석을 넘어, 이러한 에이전트가 마
 - 컴퓨터에 Python 3 이상 설치
 - 활성 Bright Data 계정
 - 활성 OpenAI 계정
-- HTTP リクエスト에 대한 기본 이해
+- HTTP 요청에 대한 기본 이해
 - Pydantic 모델에 대한 약간의 친숙함
 - AI 에이전트 기능에 대한 일반적인 이해
 
@@ -72,7 +72,7 @@ AI 모델 자체의 잠재적 오해석을 넘어, 이러한 에이전트가 마
 
 먼저 시스템에 Python 3이 설치되어 있는지 확인하십시오. 설치되어 있지 않다면 [Python 다운로드](https://www.python.org/downloads/) 후 운영 체제에 맞는 설치 지침을 따르십시오.
 
-터미널을 실행하고 スクレイピング 에이전트 프로젝트를 위한 새 디렉터리를 생성하십시오:
+터미널을 실행하고 스크레이핑 에이전트 프로젝트를 위한 새 디렉터리를 생성하십시오:
 
 ```sh
 mkdir openai-sdk-agent
